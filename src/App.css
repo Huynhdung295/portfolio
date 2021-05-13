@@ -1,36 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 /*===== VARIABLES CSS =====*/
-:root{
+:root {
+  --text-color-light: #fff;
+
   --header-height: 3rem;
   /*===== Colors =====*/
-  --first-color: #FCA4A6;
-  --first-color-dark: #C1576A;
-  --first-color-darken: #A83E51;
-  --white-color: #FCF8F8;
-  
+  --first-color: #fca4a6;
+  --first-color-dark: #c1576a;
+  --first-color-darken: #a83e51;
+  --white-color: #fcf8f8;
+
   /*===== Font and typography =====*/
-  --body-font: 'Poppins', sans-serif;
+  --body-font: "Poppins", sans-serif;
   --big-font-size: 3rem;
-  --normal-font-size: .938rem;
-  
+  --normal-font-size: 0.938rem;
+
   /*===== z index =====*/
   --z-fixed: 100;
+  --text-color-light: #fff;
+
+  /*========== Box, Drop & Text Shadow ==========*/
+  --box-shadow-inset: inset 0 22px 56px -36px rgba(255, 255, 255, 0.5),
+    inset 0 4px 5px -4px rgba(255, 255, 255, 1),
+    inset 0 -31px 34px -32px rgba(96, 68, 144, 0.3),
+    inset 0 39px 50px -34px rgba(202, 172, 255, 0.3),
+    inset 0 2px 9px rgba(154, 146, 210, 0.3),
+    inset 0 1px 10px rgba(227, 222, 255, 0.2);
+
+  --drop-shadow: 0 0 8px rgba(161, 165, 247, 0.8);
+
+  --text-shadow: 0 0 8px rgba(161, 165, 247, 0.8);
+
+  --box-shadow-inset-button: inset 0 2px 7px -9px rgba(255, 255, 255, 0.5),
+    inset 0 1px 2px -1px rgba(255, 255, 255, 1),
+    inset 0 -20px 16px -32px rgba(96, 68, 144, 0.3),
+    inset 0 28px 25px -24px rgba(202, 172, 255, 0.3),
+    inset 0 1px 4px rgba(154, 146, 210, 0.3),
+    inset 0 1px 10px rgba(227, 222, 255, 0.2);
+
+  /*========== Box, Drop & Text Shadow Hover ==========*/
+  --box-shadow-inset-hover: inset 0 19px 28px -18px rgba(255, 255, 255, 0.5),
+    inset 0 4px 6px -3px rgba(255, 255, 255, 1),
+    inset 0 -51px 44px -42px rgba(96, 68, 144, 0.3),
+    inset 0 59px 60px -32px rgba(202, 172, 255, 0.3),
+    inset 0 4px 16px rgba(154, 146, 210, 0.3),
+    inset 0 2px 25px rgba(227, 222, 255, 0.23);
+
+  --drop-shadow-hover: 0 0 14px rgba(161, 165, 247, 0.8);
+
+  --text-shadow-hover: 0 0 14px rgba(161, 165, 247, 0.8);
+
+  --box-shadow-inset-button-hover: inset 0 4px 7px -4px rgba(255, 255, 255, 0.5),
+    inset 0 1px 2px -1px rgba(255, 255, 255, 1),
+    inset 0 -20px 16px -32px rgba(96, 68, 144, 0.3),
+    inset 0 28px 25px -20px rgba(202, 172, 255, 0.3),
+    inset 0 1px 4px rgba(154, 146, 210, 0.3),
+    inset 0 1px 16px rgba(227, 222, 255, 0.2);
+  /*========== Filter Blur ==========*/
+  --filter-blur: blur(100px);
 }
 
-@media screen and (min-width: 768px){
-  :root{
+@media screen and (min-width: 768px) {
+  :root {
     --big-font-size: 5rem;
     --normal-font-size: 1rem;
   }
 }
 
 /*===== BASE =====*/
-*,::before,::after{
+*,
+::before,
+::after {
   box-sizing: border-box;
-  
 }
 
-body{
+body {
   background: url("./img/background.gif");
   margin: var(--header-height) 0 0 0;
   padding: 0;
@@ -38,34 +82,47 @@ body{
   font-size: var(--normal-font-size);
   font-weight: 500;
 }
-@media screen and (min-width: 768px){
-    body{
-        margin: 0;
-      }
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
 }
-h1,p,ul{
+h1,
+p,
+ul {
   margin: 0;
 }
 
-ul{
+ul {
   padding: 0;
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
-.bd-grid{
-    max-width: 1024px;
-    display: grid;
-    grid-template-columns: 100%;
-    column-gap: 2rem;
-    width: calc(100% - 2rem);
-    margin-left: 1rem;
-    margin-right: 1rem;
+.bd-grid {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.bd-container {
+  max-width: 1024px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .bd-container {
+    margin-left: auto;
+    margin-right: auto;
   }
+}

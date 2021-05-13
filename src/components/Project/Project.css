@@ -1,0 +1,136 @@
+/*========== CARD project ==========*/
+.project,
+.project__container {
+  display: grid;
+  align-items: center;
+}
+
+.project {
+  padding: 2.5rem 0;
+}
+
+.project__container {
+  grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
+  row-gap: 3.5rem;
+  column-gap: 2.5rem;
+}
+
+.project__card {
+    position: relative;
+  background: rgba(255, 255, 255, 0.001);
+  color: var(--text-color-light);
+  box-shadow: var(--box-shadow-inset);
+  backdrop-filter: var(--filter-blur);
+  padding: 3.5rem 1.5rem 2rem;
+  border-radius: 3rem;
+  text-align: center;
+  height: 31rem;
+  margin-top: 3rem;
+}
+
+.project__icon {
+  width: 120px;
+  fill: var(--text-color-light);
+  filter: drop-shadow(var(--drop-shadow));
+  margin-bottom: 0.25rem;
+}
+
+.project__title,
+.project__description {
+  text-shadow: var(--text-shadow);
+}
+
+.project__title {
+  font-size: 1.7rem;
+  margin-bottom: 0.25rem;
+  margin-top: -2rem;
+}
+
+.project__description {
+  text-align: initial;
+  margin-bottom: 1.5rem;
+}
+
+.project__button-icon {
+  width: 1.2rem;
+  margin-left: 0.5rem;
+  fill: var(--text-color-light);
+  filter: drop-shadow(var(--drop-shadow));
+}
+
+.project__button {
+    position: absolute;
+  box-shadow: var(--box-shadow-inset-button);
+  color: var(--text-color-light);
+  text-shadow: var(--text-shadow);
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  bottom: 2rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.project__button:hover {
+  box-shadow: var(--box-shadow-inset-button-hover);
+}
+
+/* Card project hover */
+.project__card:hover {
+  box-shadow: var(--box-shadow-inset-hover);
+}
+
+.project__card:hover .project__icon {
+  filter: drop-shadow(var(--drop-shadow-hover));
+}
+
+.project__card:hover .project__title,
+.project__card:hover .project__description {
+  text-shadow: var(--text-shadow-hover);
+}
+
+.project__card,
+.project__icon,
+.project__title,
+.project__description,
+.project__button {
+  transition: 0.2s;
+}
+
+/*========== MEDIA QUERIES ==========*/
+/* For small devices */
+@media screen and (max-width: 359px) {
+  .project__container {
+    grid-template-columns: 1fr;
+  }
+  .project__card {
+    padding: 2rem 1rem 1.5rem;
+    border-radius: 2rem;
+  }
+  .project__icon {
+    width: 80px;
+  }
+  .project__title {
+    font-size: 1.5rem;
+  }
+  .project__description {
+    font-size: 0.75rem;
+  }
+  .project__button {
+    padding: 1rem;
+    font-size: 0.75rem;
+    border-radius: 0.6rem;
+  }
+  .project__button-icon {
+    width: 1rem;
+  }
+}
+
+/* For long screens */
+@media screen and (min-width: 1024px) {
+  .project {
+    height: 100vh;
+  }
+}
