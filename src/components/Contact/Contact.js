@@ -37,34 +37,34 @@ function Contact() {
                 <div className="contact-ic">
                   <button>
                     <a href="#" className="contact__button btn-contact">
-                      X
+                      <i className="bx bxs-location-plus contact-icon"></i>
                     </a>
                   </button>
-                  <p className="text-contact">Helloo</p>
+                  <p className="text-contact">District 7, HCMC</p>
                 </div>
                 <div className="contact-ic">
                   <button>
                     <a href="#" className="contact__button btn-contact">
-                     O
+                      <i className="bx bxs-phone-call contact-icon"></i>
                     </a>
                   </button>
-                  <p className="text-contact">Helloo</p>
+                  <p className="text-contact">0889 310 211</p>
                 </div>
                 <div className="contact-ic">
                   <button>
                     <a href="#" className="contact__button btn-contact">
-                      X
+                      <i className="bx bx-mail-send contact-icon"></i>
                     </a>
                   </button>
-                  <p className="text-contact">Helloo</p>
+                  <p className="text-contact">hohuynhdung@gmail.com</p>
                 </div>
                 <div className="contact-ic">
                   <button>
                     <a href="#" className="contact__button btn-contact">
-                      O
+                      <i className="bx bxl-github contact-icon"></i>
                     </a>
                   </button>
-                  <p className="text-contact">Helloo</p>
+                  <p className="text-contact">/Huynhdung295</p>
                 </div>
               </div>
               <h1 className="contact__title">CONTACT ME</h1>

@@ -88,6 +88,11 @@
   font-size: 1.2rem;
   margin-top: 1rem;
 }
+.contact-icon{
+  font-size: 2rem;
+  margin-top: -1rem;
+  margin-left: -0.6rem;
+}
 /* ===== MEDIA QUERIES =====*/
 @media screen and (max-width: 768px) {
   .img5 {
@@ -100,8 +105,8 @@
     width: 200px;
   }
   .contact__link{
-    margin-bottom: 2.5rem;
-    margin-top: -2rem;
+    margin-bottom: 2rem;
+    margin-top: -3rem;
   }
   .contact__title{
     margin-top: -0.5rem;
