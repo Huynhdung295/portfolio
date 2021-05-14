@@ -1,8 +1,8 @@
 const listProject = [
     {
         id: 1,
-        title: "Project 1",
-        description: "Hello, đây là Project 1"
+        title: "Template Honda",
+        description: "Web is full of features in terms of interface compared to the original web."
     },
     {
         id: 1,

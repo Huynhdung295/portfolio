@@ -1,0 +1,8 @@
+#fp-nav ul li a.active span {
+    background: #009CE9;
+}
+@media screen and (max-width: 399px) {
+    #fp-nav ul li a.active span {
+        background: #000;
+    }
+}

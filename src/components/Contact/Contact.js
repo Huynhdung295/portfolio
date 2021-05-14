@@ -5,6 +5,9 @@ import img5 from "../../img/Contact/img5.png";
 import img1 from "../../img/Home/img1.png";
 
 function Contact() {
+  const noti = () =>{
+    alert("Updating...")
+  }
   /*===== MOUSEMOVE contact IMG =====*/
   document.addEventListener("mousemove", move);
   function move(e) {
@@ -69,8 +72,8 @@ function Contact() {
               </div>
               <h1 className="contact__title">CONTACT ME</h1>
 
-              <button>
-                <a href="#about" className="contact__button">
+              <button onClick={noti}>
+                <a href="#" className="contact__button">
                   Click to contact
                 </a>
               </button>
