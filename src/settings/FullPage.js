@@ -29,7 +29,7 @@ function FullPage() {
       anchors={["home", "about", "portfolio", "contact"]}
       sectionsColor={["", "", "", ""]}
       navigation
-      // navigationTooltips={["1","2","3","Hee"]}
+      // navigationTooltips={["1","2","3","4"]}
       render={({ state, fullpageApi }) => {
         return (
           <div id="fullpage-wrapper">
