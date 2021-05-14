@@ -94,6 +94,35 @@
   margin-left: -0.6rem;
 }
 /* ===== MEDIA QUERIES =====*/
+@media screen and (max-width: 399px) {
+.img5{
+  right: -2rem !important;
+    top: -3rem ;
+}
+.img1-contact{
+  left: -2rem ;
+    top: -1rem ;
+}
+.btn-contact {
+  width: 2rem;
+  height: 2rem;
+}
+.contact-icon {
+  font-size: 1.5rem;
+  margin-left: -0.6rem;
+  margin-top: -1rem;
+}
+.text-contact {
+  margin-left: 4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.6rem;
+}
+.contact__title{
+  font-size: 2.5rem;
+  margin-bottom: -0.5rem !important;
+}
+}
 @media screen and (max-width: 768px) {
   .img5 {
     width: 250px;
