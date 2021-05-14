@@ -87,6 +87,11 @@ body {
     margin: 0;
   }
 }
+@media screen and (max-width: 399px){
+button {
+  background: none !important;
+}
+}
 h1,
 p,
 ul {
