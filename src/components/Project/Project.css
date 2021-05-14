@@ -36,7 +36,8 @@
 }
 
 .project__title,
-.project__description {
+.project__description,
+.project__techUse {
   text-shadow: var(--text-shadow);
 }
 
@@ -49,6 +50,22 @@
 .project__description {
   text-align: initial;
   margin-bottom: 1.5rem;
+  position: absolute;
+  bottom: 10rem;
+  left: 1.5rem;
+  right: 1.5rem;
+}
+.project__techUse{
+  text-align: initial;
+  margin-bottom: 1.5rem;
+  position: absolute;
+  bottom: 7rem;
+  left: 1.5rem;
+  right: 1.5rem;
+}
+.project__img{
+  height: 20rem;
+  width: 100%;
 }
 
 .project__button-icon {
@@ -87,7 +104,8 @@
 }
 
 .project__card:hover .project__title,
-.project__card:hover .project__description {
+.project__card:hover .project__description,
+.project__card:hover .project__techUse {
   text-shadow: var(--text-shadow-hover);
 }
 
@@ -95,15 +113,18 @@
 .project__icon,
 .project__title,
 .project__description,
+.project__techUse
 .project__button {
   transition: 0.2s;
 }
 
 /*========== MEDIA QUERIES ==========*/
 /* For small devices */
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 399px) {
   .project__container {
     grid-template-columns: 1fr;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
   }
   .project__card {
     padding: 2rem 1rem 1.5rem;
@@ -118,6 +139,9 @@
   .project__description {
     font-size: 0.75rem;
   }
+  .project__techUse{
+    font-size: 0.75rem;
+  }
   .project__button {
     padding: 1rem;
     font-size: 0.75rem;
@@ -125,6 +149,9 @@
   }
   .project__button-icon {
     width: 1rem;
+  }
+  .project__img{
+    height: 13rem;
   }
 }
 

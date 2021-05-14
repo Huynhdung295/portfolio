@@ -19,6 +19,11 @@ function FullPage() {
           key={list.id}
           title={list.title}
           description={list.description}
+          techUse = {list.techUse}
+          imgPrj = {list.imgPrj}
+          linkPrj = {list.linkPrj}
+          newTab = {list.newTab}
+          status = {list.status}
         />
       </div>
     );
