@@ -99,10 +99,13 @@
     margin-top: 1.5rem;
     width: 10rem;
   }
+  .img1-about{
+    margin-left: 13rem;
+  }
   .about__description {
     margin-top: -1rem;
     margin-bottom: 5rem;
-    font-size: 0.8rem;
+    font-size: 0.82rem;
   }
   .about__title {
     margin-bottom: -0.5rem;
