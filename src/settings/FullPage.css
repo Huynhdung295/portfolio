@@ -1,7 +1,7 @@
 #fp-nav ul li a.active span {
     background: #009CE9;
 }
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 480px) {
     #fp-nav ul li a.active span {
         background: #000;
     }

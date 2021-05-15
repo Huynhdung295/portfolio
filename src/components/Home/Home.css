@@ -97,7 +97,7 @@
     margin-top: 1.8rem;
   }
 }
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 480px) {
   .home__description {
     margin-top: 3.8rem;
     margin-bottom: -0.5rem;

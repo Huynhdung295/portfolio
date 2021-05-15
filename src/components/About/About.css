@@ -94,7 +94,7 @@
     z-index: -1;
   }
 }
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 480px) {
   .img4 {
     margin-top: 1.5rem;
     width: 10rem;
