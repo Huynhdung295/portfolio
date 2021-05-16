@@ -34,6 +34,12 @@ function FullPage() {
       anchors={["home", "about", "portfolio", "contact"]}
       sectionsColor={["", "", "", ""]}
       navigation
+      delay={1000}
+      sectionPaddingTop ={0}
+      sectionPaddingBottom = {0}
+      verticalAlign ={false}
+      arrowNavigation = {true}
+      scrollBar = {false}
       // navigationTooltips={["1","2","3","4"]}
       render={({ state, fullpageApi }) => {
         return (

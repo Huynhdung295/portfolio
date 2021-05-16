@@ -16,7 +16,7 @@
 }
 
 .project__card {
-    position: relative;
+  position: relative;
   background: rgba(255, 255, 255, 0.001);
   color: var(--text-color-light);
   box-shadow: var(--box-shadow-inset);
@@ -55,7 +55,7 @@
   left: 1.5rem;
   right: 1.5rem;
 }
-.project__techUse{
+.project__techUse {
   text-align: initial;
   margin-bottom: 1.5rem;
   position: absolute;
@@ -63,7 +63,7 @@
   left: 1.5rem;
   right: 1.5rem;
 }
-.project__img{
+.project__img {
   height: 20rem;
   width: 100%;
 }
@@ -76,7 +76,7 @@
 }
 
 .project__button {
-    position: absolute;
+  position: absolute;
   box-shadow: var(--box-shadow-inset-button);
   color: var(--text-color-light);
   text-shadow: var(--text-shadow);
@@ -113,13 +113,27 @@
 .project__icon,
 .project__title,
 .project__description,
-.project__techUse
-.project__button {
-  transition: 0.2s;
+.project__techUse .project__button {
+  transition: 0.0001s;
 }
 
 /*========== MEDIA QUERIES ==========*/
 /* For small devices */
+@media screen and (min-width: 768px) {
+  .project__description,
+  .project__techUse {
+    opacity: 0;
+    transition: 0s !important;
+  }
+  .project__card:hover .project__img {
+    opacity: 0.35;
+  }
+  .project__card:hover .project__description,
+  .project__card:hover .project__techUse {
+    opacity: 1;
+   
+  }
+}
 @media screen and (max-width: 480px) {
   .project__container {
     grid-template-columns: 1fr;
@@ -139,7 +153,7 @@
   .project__description {
     font-size: 0.75rem;
   }
-  .project__techUse{
+  .project__techUse {
     font-size: 0.75rem;
   }
   .project__button {
@@ -150,7 +164,7 @@
   .project__button-icon {
     width: 1rem;
   }
-  .project__img{
+  .project__img {
     height: 13rem;
   }
 }

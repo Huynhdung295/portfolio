@@ -4,7 +4,7 @@ import "./Project.css";
 function Project(props) {
 
   const CallNoti = () => {
-    if(props.status == "noti"){
+    if(props.status === "noti"){
       alert("Updating...")
     }
   }
