@@ -2,6 +2,7 @@ import React from "react";
 import "./Header.css";
 
 function Header() {
+  
   const showMenu = () => {
     const navMenu = document.getElementById("nav-menu");
     navMenu.classList.toggle("show");

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import img4 from "../../img/About/img4.png";
 import img1 from "../../img/Home/img1.png";
-
+import { BrowserRouter as Link } from "react-router-dom";
 
 import "./About.css";
 function About() {
@@ -46,14 +46,14 @@ function About() {
                 <br />- Book reading, Technology is my hobby.
               </p>
               <h1 className="about__title">ABOUT ME</h1>
-              <button onClick={noti}>
-                <a href="#" className="about__button btn-1-about">
-                  Show more
+              <button>
+                <a href="/resume" target="_blank" className="about__button btn-1-about">
+                  Resume
                 </a>
               </button>
               <button onClick={noti}>
                 <a href="#" className="about__button btn-2-about">
-                  Resume
+                  Download CV
                 </a>
               </button>
             </div>

@@ -10,6 +10,7 @@
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-messenger-customer-chat": "^0.8.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "use-typed": "^0.0.1",
     "web-vitals": "^1.1.1"
