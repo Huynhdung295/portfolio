@@ -5,9 +5,9 @@ import img5 from "../../img/Contact/img5.png";
 import img1 from "../../img/Home/img1.png";
 
 function Contact() {
-  const noti = () =>{
-    alert("Updating...")
-  }
+  const noti = () => {
+    alert("Updating...");
+  };
   /*===== MOUSEMOVE contact IMG =====*/
   document.addEventListener("mousemove", move);
   function move(e) {
@@ -39,7 +39,7 @@ function Contact() {
               <div className="contact__link">
                 <div className="contact-ic">
                   <button>
-                    <a href="#" className="contact__button btn-contact">
+                    <a href="/#" className="contact__button btn-contact">
                       <i className="bx bxs-location-plus contact-icon"></i>
                     </a>
                   </button>
@@ -47,7 +47,7 @@ function Contact() {
                 </div>
                 <div className="contact-ic">
                   <button>
-                    <a href="#" className="contact__button btn-contact">
+                    <a href="/#" className="contact__button btn-contact">
                       <i className="bx bxs-phone-call contact-icon"></i>
                     </a>
                   </button>
@@ -55,7 +55,7 @@ function Contact() {
                 </div>
                 <div className="contact-ic">
                   <button>
-                    <a href="#" className="contact__button btn-contact">
+                    <a href="/#" className="contact__button btn-contact">
                       <i className="bx bx-mail-send contact-icon"></i>
                     </a>
                   </button>
@@ -63,7 +63,7 @@ function Contact() {
                 </div>
                 <div className="contact-ic">
                   <button>
-                    <a href="#" className="contact__button btn-contact">
+                    <a href="/#" className="contact__button btn-contact">
                       <i className="bx bxl-github contact-icon"></i>
                     </a>
                   </button>
@@ -73,7 +73,7 @@ function Contact() {
               <h1 className="contact__title">CONTACT ME</h1>
 
               <button onClick={noti}>
-                <a href="#" className="contact__button">
+                <a href="/#" className="contact__button">
                   Click to contact
                 </a>
               </button>

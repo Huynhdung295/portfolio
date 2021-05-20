@@ -7,7 +7,9 @@ import ScrollTopRS from "./ScrollTop/ScrollTopRS";
 import "./Resume.css";
 
 function Resume() {
- const themeRS = document.body.classList.add("resumeCV-bg")
+  document.body.classList.add("resumeCV-bg");
+
+  
 
   return (
     <div>

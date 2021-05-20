@@ -1,3 +1,4 @@
+ 
 const dataSkillsLeft = [
     {
         dotSkill:"",
@@ -68,5 +69,5 @@ const dataSkillsRight = [
     },
   
 ];
-
+// eslint-disable-next-line
 export default { dataSkillsLeft, dataSkillsRight };

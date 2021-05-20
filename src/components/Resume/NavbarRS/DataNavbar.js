@@ -12,7 +12,7 @@ const dataNavbar = [
     {
         navTitle:"Education",
         navHref: "#education",
-        navIcon: "bx bx-receipt navRS__icon"
+        navIcon: "bx bx-facebook navRS__icon"
     },
     {
         navTitle:"Skills",

@@ -2,15 +2,13 @@ import React from "react";
 import "./NavbarRS.css";
 import dataNavbar from "./DataNavbar";
 function NavbarRS() {
-  
-
   const toggleMenu = () => {
     const nav = document.getElementById("navRS-menu");
     nav.classList.toggle("show-menu");
   };
   const data = dataNavbar.map((data) => {
     return (
-      <li className="navRS__item">
+      <li key={data.navIcon} className="navRS__item">
         <a
           href={data.navHref}
           onClick={() => {
@@ -28,7 +26,7 @@ function NavbarRS() {
   return (
     <header className="l-headerRS" id="header">
       <div className="navRS bd-containerRS">
-        <a href="#" className="navRS__logo">
+        <a href="/#" className="navRS__logo">
           Huỳnh Dũng
         </a>
         <div className="navRS__menu" id="navRS-menu">

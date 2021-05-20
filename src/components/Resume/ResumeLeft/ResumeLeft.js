@@ -5,7 +5,9 @@ import ProfileRS from "./Profile/Profile";
 import "./ResumeLeft.css";
 import SkillRS from "./Skills/Skills";
 import SocialRS from "./Social/Social";
-function ResumeLeft() {
+
+function ResumeLeft(props) {
+  
   return (
     <div className="resume__left">
       <HomeRS />

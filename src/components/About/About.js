@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import img4 from "../../img/About/img4.png";
 import img1 from "../../img/Home/img1.png";
-import { BrowserRouter as Link } from "react-router-dom";
+
 
 import "./About.css";
 function About() {
@@ -52,7 +52,7 @@ function About() {
                 </a>
               </button>
               <button onClick={noti}>
-                <a href="#" className="about__button btn-2-about">
+                <a href="/#" className="about__button btn-2-about">
                   Download CV
                 </a>
               </button>

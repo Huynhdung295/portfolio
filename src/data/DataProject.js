@@ -43,13 +43,13 @@ const listProject = [
   },
   {
     id: 5,
-    title: "Project 5",
-    description: "Updating...",
-    techUse: "",
-    imgPrj: "",
-    linkPrj: "#",
-    newTab: "",
-    status: "noti"
+    title: "Mitech",
+    description: "- Mitech Template",
+    techUse: "- Technologies Used: HTML, CSS, JS",
+    imgPrj: "https://i0.wp.com/s1.uphinh.org/2021/05/20/prj5.png",
+    linkPrj: "https://mitech-hd.vercel.app/",
+    newTab: "_blank",
+    status: ""
   },
 ];
 

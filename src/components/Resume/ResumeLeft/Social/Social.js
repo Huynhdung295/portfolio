@@ -4,7 +4,7 @@ import dataSocial from "./dataSocial";
 function SocialRS() {
   const data = dataSocial.map((data) => {
     return (
-      <a href={data.href} target="_blank" className="socialRS__link">
+      <a key={data.name} href={data.href} target="_blank" rel="noreferrer" className="socialRS__link">
         <i className={data.icon} /> {data.name}
       </a>
     );
