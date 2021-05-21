@@ -2,13 +2,11 @@ import React from "react";
 import img4 from "../../img/About/img4.png";
 import img1 from "../../img/Home/img1.png";
 
+import pdf from "../Download/hohuynhdung-cv.pdf"
 
 import "./About.css";
 function About() {
   
-  const noti = () =>{
-    alert("Updating...")
-  }
 
   /*===== MOUSEMOVE HOME IMG =====*/
   document.addEventListener("mousemove", move);
@@ -51,8 +49,8 @@ function About() {
                   Resume
                 </a>
               </button>
-              <button onClick={noti}>
-                <a href="/#" className="about__button btn-2-about">
+              <button >
+                <a href={pdf} download="hohuynhdung"className="about__button btn-2-about">
                   Download CV
                 </a>
               </button>

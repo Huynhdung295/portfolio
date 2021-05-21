@@ -1,36 +1,11 @@
 import React from "react";
 import me from "../../../../img/me.png";
+import {clickGene} from "../../../Download/downloadCV"
+import pdf from "../../../Download/hohuynhdung-cv.pdf"
 
-import html2pdf from "html2pdf.js";
 
 function HomeRS(props) {
-  //  Download A4
-  const scaleCV = () => {
-    document.body.classList.add("scale-cv");
-  };
-  const removeScale = () => {
-    document.body.classList.remove("scale-cv");
-  };
-
-  const areaCV = document.getElementById("area-cv");
-  // Html2pdf options
-  const opt = {
-    margin: 0,
-    filename: "HoHuynhDung.pdf",
-    image: { type: "jpeg", quality: 0.98 },
-    // pagebreak: { mode: "avoid-all" },
-    html2canvas: { scale: 4 }, 
-    jsPDF: { format: "a4", orientation: "l" }
-  };
-  const generateResume = () => {
-    html2pdf(areaCV, opt);
-  };
-  const clickGene = () => {
-    scaleCV();
-    generateResume();
-    setTimeout(removeScale, 3000);
-  };
-
+ 
   const selectTheme = () => {
     // Const
     const themeButton = document.getElementById("theme-button");
@@ -69,7 +44,7 @@ function HomeRS(props) {
           <h1 className="homeRS__title text-h1">HỒ HUỲNH DŨNG</h1>
           <h3 className="homeRS__profession text-h3">Front End Developer</h3>
           <div>
-            <a download href="/#" className="homeRS__button-movil">
+            <a href={pdf} download="hohuynhdung" className="homeRS__button-movil">
               Download
             </a>
           </div>
