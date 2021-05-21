@@ -14,9 +14,9 @@ import Contact from "../components/Contact/Contact";
 function FullPage() {
   const showProject = listProject.map((list) => {
     return (
-      <div className="slide">
+      <div key={list.id} className="slide">
         <Project
-          key={list.id}
+          
           title={list.title}
           description={list.description}
           techUse = {list.techUse}
@@ -30,9 +30,12 @@ function FullPage() {
   });
   return (
     <ReactFullpage
+    
+    licenseKey={"OPEN-SOURCE-GPLV3-LICENSE"}
+
       scrollOverflow={true}
       anchors={["home", "about", "portfolio", "contact"]}
-      sectionsColor={["", "", "", ""]}
+      // sectionsColor={["", "", "", ""]}
       navigation
       delay={1000}
       sectionPaddingTop ={0}
@@ -40,23 +43,27 @@ function FullPage() {
       verticalAlign ={false}
       arrowNavigation = {true}
       scrollBar = {false}
+      scrollingSpeed = {600}
+      // lazyLoading
+      // v2compatible={true}
+
       // navigationTooltips={["1","2","3","4"]}
       render={({ state, fullpageApi }) => {
         return (
-          <div id="fullpage-wrapper">
-            <div key={1} className="section sec-home">
+          <div key={null} id="fullpage-wrapper">
+            <div className="section sec-home">
               <Home />
             </div>
-            <div key={2} className="section sec-about">
+            <div className="section sec-about">
               <About />
             </div>
-            <div key={3} className="section sec-project">
+            <div  className="section sec-project">
               {showProject}
             </div>
-            <div key={4} className="section sec-contact">
+            <div  className="section sec-contact">
               <Contact />
             </div>
-            {/* <div key={4} className="section">
+            {/* <div className="section">
               Contact
               <button onClick={() => fullpageApi.moveTo(1, 0)}>Move top</button>
             </div> */}
