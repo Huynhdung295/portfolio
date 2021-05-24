@@ -3,6 +3,14 @@
 }
 @media screen and (max-width: 480px) {
     #fp-nav ul li a.active span {
-        background: #000;
+        background: grey;
+    }
+    #fp-nav ul li a span {
+        background: #fff;
+    }
+}
+@media screen and (min-width: 481px){
+    #fp-nav {
+        display: none;
     }
 }
